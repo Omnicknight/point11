@@ -1,4 +1,5 @@
-//первая задача
+//первая задач
+
 var runner = {
     $$runnerId: null,
     $$tasks: [],
@@ -24,7 +25,6 @@ var runner = {
     }
 }
 
-//вторая задача
 runner.add(() => {
     console.log('Hello');
 });
@@ -34,6 +34,8 @@ runner.add(() => {
 
 runner.setSpeed(2000);
 
+
+//вторая задача
 const maps = (arr, cb) => {
     let arr2 = [];
     for(let i = 0; i < arr.length; i++) {
@@ -41,6 +43,8 @@ const maps = (arr, cb) => {
     };
     return arr2;
 }
+
+
 
 //проверки
 const a =[1,2,3];
@@ -54,28 +58,28 @@ const asdf = maps(['1', '2', '3'], (Number));
 console.log(asdf);
 
 
-let celsius = [-15, -5, 0, 10, 16, 20, 24, 32]
-let fahrenheit = maps(celsius, t => t * 1.8 + 32);
-console.log(fahrenheit);
-// fahrenheit is [5, 23, 32, 50, 60.8, 68, 75.2, 89.6]
+// let celsius = [-15, -5, 0, 10, 16, 20, 24, 32]
+// let fahrenheit = maps(celsius, t => t * 1.8 + 32);
+// console.log(fahrenheit);
+// // fahrenheit is [5, 23, 32, 50, 60.8, 68, 75.2, 89.6]
 
-let users = [
-    { id: 11, name: 'Adam', age: 23, group: 'editor' },
-    { id: 47, name: 'John', age: 28, group: 'admin' },
-    { id: 85, name: 'William', age: 34, group: 'editor' },
-    { id: 97, name: 'Oliver', age: 28, group: 'admin' }
-  ];
-  console.log(maps(users, ({id, age, group}) => `\n${id} ${age} ${group}`).join(''));
-  // it returns:
-//   "
-//   11 23 editor
-//   47 28 admin
-//   85 34 editor
-//   97 28 admin"
-let arrr = [1, 2, 3, 4, 5];
+// let users = [
+//     { id: 11, name: 'Adam', age: 23, group: 'editor' },
+//     { id: 47, name: 'John', age: 28, group: 'admin' },
+//     { id: 85, name: 'William', age: 34, group: 'editor' },
+//     { id: 97, name: 'Oliver', age: 28, group: 'admin' }
+//   ];
+//   console.log(maps(users, ({id, age, group}) => `\n${id} ${age} ${group}`).join(''));
+//   // it returns:
+// //   "
+// //   11 23 editor
+// //   47 28 admin
+// //   85 34 editor
+// //   97 28 admin"
+// let arrr = [1, 2, 3, 4, 5];
 
-let result = maps(arrr, function(value, i) {
-	return value * i;
-});
+// let result = maps(arrr, function(value, i) {
+// 	return value * i;
+// });
 
-console.log(result);
+// console.log(result);
